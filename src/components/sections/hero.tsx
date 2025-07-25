@@ -36,7 +36,7 @@ const Hero = () => {
   const handlePrev = () => api?.scrollTo((current - 1 + total) % total);
 
   return (
-    <section className="relative h-[60vh] sm:h-[80vh] md:h-[calc(100vh-4rem)] overflow-hidden">
+    <section className="relative h-[24vh] sm:h-[40vh] md:h-[calc(100vh-4rem)] overflow-hidden">
       <Carousel setApi={setApi} className="w-full h-full">
         <CarouselContent className="h-full">
           {images.map((src, index) => (
@@ -46,7 +46,7 @@ const Hero = () => {
                 alt={`Slide ${index + 1}`}
                 width={1920}
                 height={1080}
-                className="w-full h-[60vh] sm:h-[80vh] md:h-full object-cover"
+                className="w-full h-[24vh] sm:h-[40vh] md:h-[calc(100vh-4rem)] object-cover"
                 priority
               />
             </CarouselItem>
