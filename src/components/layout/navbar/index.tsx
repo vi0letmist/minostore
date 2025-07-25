@@ -18,6 +18,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { NavigationMegaMenu } from "./NavigationMegaMenu";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 interface NavbarProps {
   className?: string;
@@ -37,7 +38,7 @@ const brands = [
       },
       {
         name: "Vintage Strobero",
-        image: "/images/products/55fe570a34e17c20c3bbd4b0f18cea72f316b0cc.png",
+        image: "/images/products/5dcf2c987b5005e5bc445b2479eb643ccac18fa8.png",
       },
       {
         name: "Vintage Shoe 1.0",
@@ -45,7 +46,7 @@ const brands = [
       },
       {
         name: "El Dorado",
-        image: "/images/products/55fe570a34e17c20c3bbd4b0f18cea72f316b0cc.png",
+        image: "/images/products/5dcf2c987b5005e5bc445b2479eb643ccac18fa8.png",
       },
       {
         name: "Unhinted",
@@ -53,7 +54,7 @@ const brands = [
       },
       {
         name: "Cursed Again",
-        image: "/images/products/55fe570a34e17c20c3bbd4b0f18cea72f316b0cc.png",
+        image: "/images/products/5dcf2c987b5005e5bc445b2479eb643ccac18fa8.png",
       },
       {
         name: "Nurture",
@@ -61,7 +62,7 @@ const brands = [
       },
       {
         name: "Secret Sky 2021",
-        image: "/images/products/55fe570a34e17c20c3bbd4b0f18cea72f316b0cc.png",
+        image: "/images/products/5dcf2c987b5005e5bc445b2479eb643ccac18fa8.png",
       },
     ],
   },
@@ -182,6 +183,16 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
             </Link>
           </li>
         </ul>
+        <div className="fixed bottom-0 left-0 right-0 bg-white p-4 z-50">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Cari produk..."
+              className="w-full px-4 py-2 pr-10 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary"
+            />
+            <MagnifyingGlassIcon className="w-5 h-5 text-gray-400 absolute right-4 top-1/2 transform -translate-y-1/2" />
+          </div>
+        </div>
       </nav>
     );
   }

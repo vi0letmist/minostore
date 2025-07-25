@@ -43,7 +43,7 @@ const Footer = () => {
   return (
     <footer className="relative">
       {/* payment gateway */}
-      <div className="flex items-center justify-center bg-white py-8 md:py-4">
+      <div className="flex items-center justify-center bg-white py-8">
         <Image
           src="/images/4689c5901e61ea00017f68a15f454b6b05ef35ae.jpg"
           alt="payment gateway"

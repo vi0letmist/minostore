@@ -64,7 +64,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Exellence Section */}
-      <section className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 py-10 px-4 md:px-40 gap-4 md:gap-8">
+      <section className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40 gap-4 md:gap-8">
         <ExellenceCard
           icon={QualityIcon}
           title="Kualitas Terpercaya"
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* This Week Selection */}
-      <section className="py-10 px-4 md:px-40">
+      <section className="py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40">
         <div className="flex items-center justify-between mb-6">
           <div className="">
             <h2 className="text-lg md:text-[28px] font-bold">
@@ -138,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* Category Section */}
-      <section className="py-10 px-4 md:px-40">
+      <section className="py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40">
         <div className="grid grid-cols-2 flex gap-8">
           {category?.map((cat) => (
             <CategoryCard
@@ -157,7 +157,7 @@ export default function Home() {
       <section className="relative h-[300px] bg-[url('/images/3af9ca2bbae059896f7a2b617ac2d25cbbf359ff.jpg')] bg-center bg-cover bg-no-repeat bg-fixed py-10">
         <div className="absolute inset-0" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 relative z-10 flex items-center justify-between h-full px-10 md:px-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 relative z-10 flex items-center justify-between h-full px-10 sm:px-24 md:px-32 lg:px-40">
           <div className="text-white">
             <h3 className="font-bold text-xl md:text-2xl">
               Diskon Nggak Pake Tanggung.
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       {/* Blog Section */}
-      <section className="px-4 md:px-40 py-10">
+      <section className="py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40">
         <div className="flex items-center justify-between mb-6">
           <div className="">
             <h2 className="text-lg md:text-[28px] font-bold">Blog</h2>
@@ -180,7 +180,7 @@ export default function Home() {
             <Button variant={"secondary"}>Lihat Semua</Button>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {blogPosts?.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}
