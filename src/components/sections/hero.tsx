@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
@@ -65,19 +66,23 @@ const Hero = () => {
         ))}
       </div>
 
-      <button
+      <Button
         onClick={handlePrev}
-        className="absolute left-4 sm:left-8 md:left-16 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full w-9 h-9 sm:w-10 sm:h-10 p-2 shadow-md"
+        variant="ghost"
+        size="icon"
+        className="absolute left-4 sm:left-8 md:left-16 top-1/2 -translate-y-1/2 z-10 bg-bg-primary rounded-full w-9 h-9 sm:w-10 sm:h-10 p-2 shadow-md"
       >
-        <ChevronLeftIcon className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
-      </button>
+        <ChevronLeftIcon className="w-5 h-5 sm:w-6 sm:h-6 text-brand-secondary" />
+      </Button>
 
-      <button
+      <Button
         onClick={handleNext}
-        className="absolute right-4 sm:right-8 md:right-16 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full w-9 h-9 sm:w-10 sm:h-10 p-2 shadow-md"
+        variant="ghost"
+        size="icon"
+        className="absolute right-4 sm:right-8 md:right-16 top-1/2 -translate-y-1/2 z-10 bg-bg-primary rounded-full w-9 h-9 sm:w-10 sm:h-10 p-2 shadow-md"
       >
-        <ChevronRightIcon className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
-      </button>
+        <ChevronRightIcon className="w-5 h-5 sm:w-6 sm:h-6 text-brand-secondary" />
+      </Button>
 
       <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-10 flex gap-2">
         {images.map((_, index) => (
