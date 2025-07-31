@@ -14,7 +14,7 @@ const ExellenceCard: React.FC<ExellenceCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex-1 flex flex-col px-6 py-4 border-2 bg-bg-primary items-center text-center">
+    <div className="flex-1 flex flex-col p-2 py-6 border-2 bg-bg-primary items-center text-center">
       <div className="py-4">
         <Icon className={`w-[100px] h-[100px] ${iconColor}`} />
       </div>

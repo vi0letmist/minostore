@@ -7,6 +7,7 @@ export interface Product {
   price: number;
   discount: number;
   rating: number;
+  href?: string;
 }
 
 export const products: Product[] = [
@@ -19,6 +20,7 @@ export const products: Product[] = [
     price: 387000,
     discount: 325000,
     rating: 3.5,
+    href: "/kelimutu-run-model-a",
   },
   {
     id: 2,
@@ -29,6 +31,7 @@ export const products: Product[] = [
     price: 319000,
     discount: 319000,
     rating: 3.5,
+    href: "/sepatu-kasual-wanita",
   },
   {
     id: 3,
@@ -39,6 +42,7 @@ export const products: Product[] = [
     price: 402000,
     discount: 402000,
     rating: 5,
+    href: "/vintage-forrester",
   },
   {
     id: 4,
@@ -49,6 +53,7 @@ export const products: Product[] = [
     price: 387000,
     discount: 387000,
     rating: 2,
+    href: "/insigma-91",
   },
   {
     id: 5,
@@ -59,6 +64,7 @@ export const products: Product[] = [
     price: 319000,
     discount: 319000,
     rating: 3.5,
+    href: "/sepatu-kasual-wanita",
   },
   {
     id: 6,
@@ -69,5 +75,6 @@ export const products: Product[] = [
     price: 402000,
     discount: 402000,
     rating: 5,
+    href: "/vintage-forrester",
   },
 ];

@@ -7,7 +7,6 @@ import UserMenu from "@/components/ui/user-menu";
 import {
   MagnifyingGlassIcon,
   ShoppingCartIcon,
-  UserCircleIcon,
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
@@ -21,7 +20,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed w-full z-50 bg-bg-tertiary md:bg-brand-primary">
-        <div className="flex items-center justify-between px-4 sm:px-24 md:px-32 lg:px-40">
+        <div className="flex items-center justify-between px-4 sm:px-24 md:px-32 lg:px-32">
           <div className="flex-1 flex items-center">
             <Button
               variant="ghost"
