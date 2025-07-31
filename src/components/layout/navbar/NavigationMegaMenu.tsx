@@ -57,19 +57,22 @@ export const NavigationMegaMenu = ({
 
                       {product.image && (
                         <div
-                          className="absolute left-full top-0 w-full py-1 hidden group-hover/product:block z-20 px-4"
+                          className="absolute left-full top-0 w-full py-1 hidden group-hover/product:block z-20 px-4 flex justify-center items-center"
                           style={{
                             top: `-${productIndex * 32}px`,
                             height: `${brand.products.length * 32}px`,
                           }}
                         >
-                          <div className="relative w-full h-full">
-                            <Image
-                              src={product.image}
-                              alt={product.name}
-                              fill
-                              className="object-contain"
-                            />
+                          <div className="relative w-full h-full flex justify-center items-center">
+                            <div className="relative border">
+                              <Image
+                                src={product.image}
+                                alt={product.name}
+                                width={250}
+                                height={250}
+                                className="object-contain"
+                              />
+                            </div>
                           </div>
                         </div>
                       )}

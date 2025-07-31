@@ -34,7 +34,7 @@ export default function Home() {
       });
     } else {
       el.scrollBy({
-        left: -500,
+        left: -600,
         behavior: "smooth",
       });
     }
@@ -53,7 +53,7 @@ export default function Home() {
       });
     } else {
       el.scrollBy({
-        left: 500,
+        left: 600,
         behavior: "smooth",
       });
     }
@@ -64,7 +64,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Exellence Section */}
-      <section className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40 gap-4 md:gap-8">
+      <section className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 pt-4 md:pt-12 px-4 sm:px-24 md:px-32 lg:px-32 gap-4 md:gap-9 flex justify-between">
         <ExellenceCard
           icon={QualityIcon}
           title="Kualitas Terpercaya"
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* This Week Selection */}
-      <section className="py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40">
+      <section className="pt-4 md:pt-12 px-4 sm:px-24 md:px-32 lg:px-32">
         <div className="flex items-center justify-between mb-6">
           <div className="">
             <h2 className="text-lg md:text-[28px] font-bold">
@@ -128,7 +128,7 @@ export default function Home() {
             {products?.map((product) => (
               <div
                 key={product.id}
-                className="w-[43vw] md:w-[17.5vw] flex-shrink-0"
+                className="w-[43vw] md:w-[18.5vw] flex-shrink-0"
               >
                 <ProductCard product={product} />
               </div>
@@ -138,8 +138,8 @@ export default function Home() {
       </section>
 
       {/* Category Section */}
-      <section className="py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40">
-        <div className="grid grid-cols-2 flex gap-8">
+      <section className="py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-32">
+        <div className="grid grid-cols-2 flex gap-5">
           {category?.map((cat) => (
             <CategoryCard
               key={cat.id}
@@ -148,16 +148,17 @@ export default function Home() {
               position={cat.position as "left" | "right" | "center"}
               textColor={cat.textColor}
               imagePosition={cat.imagePosition as "top" | "center" | "bottom"}
+              href={cat.href}
             />
           ))}
         </div>
       </section>
 
       {/* Discount Section */}
-      <section className="relative h-[300px] bg-[url('/images/3af9ca2bbae059896f7a2b617ac2d25cbbf359ff.jpg')] bg-center bg-cover bg-no-repeat bg-fixed py-10">
-        <div className="absolute inset-0" />
+      <section className="relative h-[300px] bg-[url('/images/3af9ca2bbae059896f7a2b617ac2d25cbbf359ff.jpg')] bg-center bg-[length:280%] md:bg-cover bg-repeat md:bg-no-repeat bg-fixed py-10">
+        <div className="absolute inset-0 bg-black/25 md:bg-black/0" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 relative z-10 flex items-center justify-between h-full px-10 sm:px-24 md:px-32 lg:px-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 relative z-10 flex items-center justify-between h-full px-10 sm:px-24 md:px-32 lg:px-32">
           <div className="text-white">
             <h3 className="font-bold text-xl md:text-2xl">
               Diskon Nggak Pake Tanggung.
@@ -165,13 +166,13 @@ export default function Home() {
             <p className="text-base">Plus bonus ongkir ke seluruh Indonesia.</p>
           </div>
           <div className="flex items-center justify-start md:justify-end">
-            <Button className="">Info Selengkapnya</Button>
+            <Button>Info Selengkapnya</Button>
           </div>
         </div>
       </section>
 
       {/* Blog Section */}
-      <section className="py-4 md:py-12 px-4 sm:px-24 md:px-32 lg:px-40">
+      <section className="pt-4 md:pt-12 px-4 sm:px-24 md:px-32 lg:px-32">
         <div className="flex items-center justify-between mb-6">
           <div className="">
             <h2 className="text-lg md:text-[28px] font-bold">Blog</h2>
@@ -186,6 +187,32 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* What other says section */}
+      {/* <section className="flex flex-col items-center justify-center px-4 py-6">
+        <h2 className="text-lg md:text-[28px] font-bold mb-6">
+          Apa Kata Mereka?
+        </h2>
+        <div className="flex flex-col items-center justify-center border rounded-lg p-4">
+          <p className="text-sm text-accent-tertiary">
+            Mino Clean masih tergolong jasa yang baru, tapi para kru dari jasa
+            baru ini sudah lihai dalam membersihkan sepatu pelanggan. Beda jenis
+            sepatu, beda teknik pembersihan yang digunakan. Salut.
+          </p>
+          <div className="flex w-full justify-between py-2">
+            <div>img</div>
+            <div className="">
+              <h5 className="font-bold">Markus Sutiyoso</h5>
+              <p className="uppercase text-xs text-accent-tertiary">
+                Cirebon, Jawa Barat
+              </p>
+            </div>
+            <div>
+              <span className="text-4xl text-cyan-400 font-serif">”</span>
+            </div>
+          </div>
+        </div>
+      </section> */}
     </div>
   );
 }

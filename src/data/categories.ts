@@ -5,6 +5,7 @@ export interface Category {
   position: "left" | "right" | "center";
   textColor: string;
   imagePosition: "top" | "center" | "bottom";
+  href: string;
 }
 
 export const category: Category[] = [
@@ -15,6 +16,7 @@ export const category: Category[] = [
     position: "left",
     textColor: "text-white",
     imagePosition: "center",
+    href: "/kategori/sepatu-anak",
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ export const category: Category[] = [
     position: "right",
     textColor: "text-white",
     imagePosition: "center",
+    href: "/kategori/sandal",
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ export const category: Category[] = [
     position: "left",
     textColor: "text-white",
     imagePosition: "bottom",
+    href: "/kategori/sepatu-wanita",
   },
   {
     id: 4,
@@ -39,5 +43,6 @@ export const category: Category[] = [
     position: "right",
     textColor: "text-text-secondary",
     imagePosition: "bottom",
+    href: "/kategori/sepatu-pria",
   },
 ];

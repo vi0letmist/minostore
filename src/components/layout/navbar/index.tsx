@@ -213,21 +213,21 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
 
           <NavigationMenuItem>
             <NavigationMenuTrigger>Belanja</NavigationMenuTrigger>
-            <NavigationMenuContent className="px-40 py-4">
+            <NavigationMenuContent className="px-40 py-8">
               <NavigationMegaMenu title="Belanja" brands={brands} />
             </NavigationMenuContent>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
             <NavigationMenuTrigger>Bundel 1</NavigationMenuTrigger>
-            <NavigationMenuContent className="px-40 py-4">
+            <NavigationMenuContent className="px-40 py-8">
               <NavigationMegaMenu title="Bundel 1" brands={brands} />
             </NavigationMenuContent>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
             <NavigationMenuTrigger>Bundel 2</NavigationMenuTrigger>
-            <NavigationMenuContent className="px-40 py-4">
+            <NavigationMenuContent className="px-40 py-8">
               <NavigationMegaMenu title="Bundel 2" brands={brands} />
             </NavigationMenuContent>
           </NavigationMenuItem>

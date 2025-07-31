@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
 
       {/* footer content */}
-      <div className="grid grid-cols-2 md:grid-cols-4 bg-brand-primary gap-8 py-8 px-4 md:px-40 text-white">
+      <div className="grid grid-cols-2 md:grid-cols-4 bg-brand-primary gap-8 py-8 px-4 md:px-32 text-white">
         {contents?.map((content, index) => (
           <div className="col-span-1" key={index}>
             <h6 className="text-sm md:text-base font-bold p-2">
